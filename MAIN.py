@@ -21,3 +21,10 @@ with col3:
    st.image("https://bmw.scene7.com/is/image/BMW/NxW_Home_ICON_CON?wid=1504&hei=542")
    button3 = st.button("BMW 샵 온라인 바로가기")
 st.caption('개인정보 처리방침')
+
+font_dirs = [os.getcwd() + '/customFonts']
+font_files = fm.findSystemFonts(fontpaths=font_dirs)
+
+for font_file in font_files:
+    fm.fontManager.addfont(font_file)
+fm._load_fontmanager(try_read_cache=False)
