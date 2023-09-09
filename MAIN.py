@@ -22,6 +22,9 @@ with col3:
    button3 = st.button("BMW 샵 온라인 바로가기")
 st.caption('개인정보 처리방침')
 
+
+import os
+import matplotlib.font_manager as fm
 font_dirs = [os.getcwd() + '/customFonts']
 font_files = fm.findSystemFonts(fontpaths=font_dirs)
 
